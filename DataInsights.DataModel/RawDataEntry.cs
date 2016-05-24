@@ -18,5 +18,10 @@ namespace DataModel
         {
             DataBaseHelper.RecordRawData(this);
         }
+
+        public void CommitInMemory()
+        {
+            InMemoryDataBaseHelper.Save(this);
+        }
     }
 }

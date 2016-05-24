@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseHelper.cs" />
+    <Compile Include="InMemoryDataBaseHelper.cs" />
     <Compile Include="RawDataEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

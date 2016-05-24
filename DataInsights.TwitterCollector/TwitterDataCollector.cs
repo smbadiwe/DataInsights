@@ -49,7 +49,11 @@ namespace TwitterConnector
                     Content = arguments.Tweet.ToString(),
                     TimeStamp = arguments.Tweet.CreatedAt
                 };
+#if DEBUG
+                entry.CommitInMemory();
+#else
                 entry.Commit();
+#endif
             };
         }
 
